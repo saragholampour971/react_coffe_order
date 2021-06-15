@@ -1,0 +1,118 @@
+#registerbg {
+    /* background-image: url("../images/registerbg.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat; */
+    /*height: inherit;*/
+    background-image: url("../images/registerbg.jpg");
+    padding: 8% 5% 5% 3%;
+    /*top: 55px;*/
+    /*To support older browsers*/
+    height: 100%;
+    width: 100%;
+    /* Set the height to match that of the viewport. */
+    height: 100vh;
+    /* Set the width to match that of the viewport. */
+    width: 100vw;
+    /* background-repeat: no-repeat; */
+    position: fixed;
+    background-size: 100%;
+}
+
+#shopbg {
+    background-image: url("../images/shopbg.jpg");
+    width: 100%vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* display: flex; */
+    /* justify-content: space-between;
+    flex-wrap: wrap; */
+}
+
+#loginbg {
+    background-image: url("../images/loginbg.jpg");
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    height: 100vh;
+    width: 100vw;
+    background-size: 100%;
+}
+
+#card {
+    width: 400px;
+    height: auto;
+    /* height: 500px; */
+    margin-left: 15%;
+    border-radius: 5%;
+    padding-top: 1%;
+    align-content: center;
+    text-align: center;
+    background-color: #dedede;
+    display: inline-block;
+}
+
+img {
+    src: url("../../src/components/products/chaiigoli.jpg");
+    width: 200px;
+    height: 200px;
+}
+
+#postcard {
+    background-color: #cec6c6;
+    /* background-color: transparent; */
+    width: 270px;
+    height: auto;
+    /* display: inline-block; */
+    align-items: center;
+    border-radius: 50px;
+}
+
+#badge {
+    cursor: pointer;
+}
+
+#cards {
+    width: 100%;
+    height: 100vh;
+    width: 100vw;
+    background-size: 100%;
+}
+
+#homebg {
+    background-image: url("../images/shopbg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    height: 100vh;
+    width: 100vw;
+    background-size: 100%;
+}
+
+#mybill {
+    background-image: url("../images/mybillbg.jpg");
+    width: 100%;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: fixed;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
