@@ -5,11 +5,15 @@ import { LoginAccount } from '../../redux/actions/handleaccount_action';
 import SimpleContext from './../../context/simplecontext';
 import  SimpleReactValidator  from 'simple-react-validator';
 import { toast } from 'react-toastify';
+import { withRouter} from 'react-router-dom';
 
-const Login = (props) => {
+const Login = ({history}) => {
 
     const context = useContext(SimpleContext);
     const dispatch = useDispatch();
+
+    const [email, getemail] = useState('');
+    const [password, setpassword] = useState('');
 
     const validator = useRef(new SimpleReactValidator({
         messages: {
@@ -44,10 +48,9 @@ const Login = (props) => {
         try{
                if  (validator.current.allValid()) {
                    dispatch(LoginAccount(context.email, context.password));
-               
-                   emailref.current.value("");
-                   passwordref.current.value = "";
-;                   props.history.replace("/");
+                context.clear_form();
+                   history.replace("/");
+                   
                }
                else {
                    validator.current.showMessages();
@@ -106,8 +109,8 @@ const Login = (props) => {
                             )}
               
                 <Button style={{ width: "100%"  }} ref={submitref}
-                    type="submit" onSubmit={() => dispatch(LoginAccount( context.email, context.password))}
-                    onClick={() => dispatch(LoginAccount( context.email, context.password))}
+                    type="submit" onSubmit={submit}
+                    onClick={submit}
                 >ورود</Button>
             </Card.Body>
         </Card>

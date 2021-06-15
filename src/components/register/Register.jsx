@@ -60,7 +60,6 @@ const Register = (props) => {
                 dispatch(NewAccount(context.fullname, context.email, context.password));
                 context.clear_form();
                 props.history.replace("/");
-                // dispatch(whoslogin());
             }
             else {
                 validator.current.showMessages();
